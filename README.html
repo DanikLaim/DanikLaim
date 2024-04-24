@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body class="body">
+
+        <ul class="colorChooser">
+          <li class="colorChooser__item" data-color="white"></li>
+          <li class="colorChooser__item" data-color="beige"></li>
+          <li class="colorChooser__item" data-color="lavender"></li>
+          <li class="colorChooser__item" data-color="peachpuff"></li>
+          <li class="colorChooser__item" data-color="lightblue"></li>
+        </ul>
+      
+        <div class="clock">
+          <div class="clock__flare"></div>
+          <div class="clock__inner">
+            <div class="clock__inner-shadow"></div>
+            <div class="clock__strokes">
+              <div class="stroke stroke1"></div>
+              <div class="stroke stroke2"></div>
+              <div class="stroke stroke3"></div>
+              <div class="stroke stroke4"></div>
+              <div class="stroke stroke5"></div>
+              <div class="stroke stroke6"></div>
+              <div class="stroke stroke7"></div>
+              <div class="stroke stroke8"></div>
+              <div class="stroke stroke9"></div>
+              <div class="stroke stroke10"></div>
+              <div class="stroke stroke11"></div>
+              <div class="stroke stroke12"></div>
+              <div class="stroke stroke13"></div>
+              <div class="stroke stroke14"></div>
+              <div class="stroke stroke15"></div>
+              <div class="stroke stroke16"></div>
+              <div class="stroke stroke17"></div>
+              <div class="stroke stroke18"></div>
+              <div class="stroke stroke19"></div>
+              <div class="stroke stroke20"></div>
+              <div class="stroke stroke21"></div>
+              <div class="stroke stroke22"></div>
+              <div class="stroke stroke23"></div>
+              <div class="stroke stroke24"></div>
+              <div class="stroke stroke25"></div>
+              <div class="stroke stroke26"></div>
+              <div class="stroke stroke27"></div>
+              <div class="stroke stroke28"></div>
+              <div class="stroke stroke29"></div>
+              <div class="stroke stroke30"></div>
+              <div class="clock__main">
+                <div class="clock__short-shadow-hand"></div>
+                <div class="clock__long-shadow-hand"></div>
+                <div class="clock__thin-shadow-hand"></div>
+                <div class="clock__logo">CatLogic</div>
+                <div class="clock__numbers clock__numbers_position_top">
+                  <span class="number"><img
+                      src="https://cat-street.github.io/catlogic-clock/images/1.svg"
+                      alt=""><img
+                      src="https://cat-street.github.io/catlogic-clock/images/1.svg"
+                      alt=""></span>
+                  <span class="number"><img
+                      src="https://cat-street.github.io/catlogic-clock/images/1.svg"
+                      alt=""><img
+                      src="https://cat-street.github.io/catlogic-clock/images/2.svg"
+                      alt=""></span>
+                  <span class="number"><img
+                      src="https://cat-street.github.io/catlogic-clock/images/1.svg"
+                      alt=""></span>
+                </div>
+                <div class="clock__numbers clock__numbers_position_right">
+                  <span class="number"><img
+                      src="https://cat-street.github.io/catlogic-clock/images/2.svg"
+                      alt=""></span>
+                  <span class="number"><img
+                      src="https://cat-street.github.io/catlogic-clock/images/3.svg"
+                      alt=""></span>
+                  <span class="number"><img
+                      src="https://cat-street.github.io/catlogic-clock/images/4.svg"
+                      alt=""></span>
+                </div>
+                <div class="clock__numbers clock__numbers_position_bottom">
+                  <span class="number"><img
+                      src="https://cat-street.github.io/catlogic-clock/images/5.svg"
+                      alt=""></span>
+                  <span class="number"><img
+                      src="https://cat-street.github.io/catlogic-clock/images/6.svg"
+                      alt=""></span>
+                  <span class="number"><img
+                      src="https://cat-street.github.io/catlogic-clock/images/7.svg"
+                      alt=""></span>
+                </div>
+                <div class="clock__numbers clock__numbers_position_left">
+                  <span class="number"><img
+                      src="https://cat-street.github.io/catlogic-clock/images/8.svg"
+                      alt=""></span>
+                  <span class="number"><img
+                      src="https://cat-street.github.io/catlogic-clock/images/9.svg"
+                      alt=""></span>
+                  <span class="number number_ten"><img
+                      src="https://cat-street.github.io/catlogic-clock/images/1.svg"
+                      alt=""><img
+                      src="https://cat-street.github.io/catlogic-clock/images/0.svg"
+                      alt=""></span>
+                </div>
+                <div class="clock__center">
+                  <div class="clock__shadow-thingy"></div>
+                  <div class="clock__center-circle"></div>
+                  <div class="clock__center-lower-flare"></div>
+                  <div class="clock__short-hand"></div>
+                  <div class="clock__long-hand"></div>
+                  <div class="clock__thin-hand"></div>
+                  <div class="clock__center-inner"></div>
+                  <div class="clock__center-flare"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </body>
+<style>
+    html, .body {
+  height: 100%
+}
+
+.body {
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 400ms;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+.colorChooser {
+  position: absolute;
+  width: 100%;
+  top: 5vmin;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding-left: 6vmin;
+  box-sizing: border-box;
+}
+
+.colorChooser__item {
+  display: block;
+  width: 4vmin;
+  height: 4vmin;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  margin: 1vmin;
+  background-color: white;
+  box-shadow: 0 0 0 4px #fff,
+              0 0 0 5px #eee;
+  opacity: .6;
+  transition: opacity 300ms;
+  cursor: pointer;
+}
+
+.colorChooser__item:hover {
+  opacity: 1;
+}
+
+.colorChooser__item:nth-child(2) {
+  background-color: beige;
+}
+
+.colorChooser__item:nth-child(3) {
+  background-color: lavender;
+}
+
+.colorChooser__item:nth-child(4) {
+  background-color: peachpuff;
+}
+
+.colorChooser__item:nth-child(5) {
+  background-color: lightblue;
+}
+
+.clock {
+  width: 50vmin;
+  height: 50vmin;
+  background: linear-gradient(45deg, #acacaa, #c2c2c0);
+  border-radius: 20%;
+  padding: 2.5vmin;
+  box-sizing: border-box;
+  position: relative;
+  margin-left: 8vmin;
+  overflow: hidden;
+  box-shadow: -3vmin 3vmin 7vmin 0 rgba(255, 255, 255, .3),
+    -6vmin 6vmin 2px 0 rgba(0, 0, 0, .3),
+    0 10vmin 4vmin -8vmin rgba(0, 0, 0, .4),
+    inset .2vmin -.2vmin .2vmin 0 rgba(0, 0, 0, .3);
+}
+
+.clock__flare {
+  position: absolute;
+  top: -.4vmin;
+  right: -.4vmin;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 23%;
+  box-shadow: inset -.2vmin .2vmin .2vmin 0 rgba(255, 255, 255, .6);
+}
+
+.clock__inner {
+  position: relative;
+  background-color: #eceeeb;
+  width: 100%;
+  height: 100%;
+  border-radius: 17.8%;
+  box-sizing: border-box;
+  padding: .5vmin;
+}
+
+.clock__inner-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 17.8%;
+  z-index: 10;
+  box-shadow: inset -2.2vmin 2.2vmin 1px 0 rgba(67, 68, 44, .5),
+    inset .5vmin -.5vmin 1px 0 white;
+}
+
+.clock__strokes {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 15%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 1.1vmin;
+  display: flex;
+}
+
+.stroke {
+  width: 150%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, .4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, .2);
+}
+
+.stroke5,
+.stroke10,
+.stroke20,
+.stroke25 {
+  height: 3px;
+}
+
+.stroke15,
+.stroke30 {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.stroke15::before,
+.stroke30::before,
+.stroke15::after,
+.stroke30::after {
+  content: '';
+  display: block;
+  width: 1vmin;
+  height: 1vmin;
+  background: radial-gradient(circle at center, rgba(0, 0, 0, .6) 0,
+      rgba(0, 0, 0, .6) 40%, rgba(255, 255, 255, .3) 60%);
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.stroke15::before,
+.stroke30::before {
+  left: 11.1vmin;
+}
+
+.stroke15::after,
+.stroke30::after {
+  right: 11.1vmin;
+}
+
+.clock__main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #eceeeb;
+  margin: auto;
+  border-radius: 11%;
+  border-bottom-left-radius: 13%;
+}
+
+.clock__logo {
+  position: absolute;
+  bottom: 22%;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2vmin;
+  letter-spacing: .05vmin;
+  color: rgba(0, 0, 0, .5);
+}
+
+.clock__numbers {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.clock__numbers_position_top,
+.clock__numbers_position_bottom {
+  width: 100%;
+  padding: 0 6.5vmin;
+  text-align: center;
+}
+
+.clock__numbers_position_top {
+  top: 0;
+}
+
+.clock__numbers_position_bottom {
+  bottom: 0;
+  flex-direction: row-reverse;
+}
+
+.clock__numbers_position_right,
+.clock__numbers_position_left {
+  height: 100%;
+  padding: 7.5vmin 0;
+}
+
+.clock__numbers_position_right {
+  right: 0;
+  flex-direction: column;
+}
+
+.clock__numbers_position_left {
+  left: 0;
+  flex-direction: column-reverse;
+  width: 8vmin;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: .8;
+  height: 6vmin;
+  width: 7vmin;
+}
+
+.number_ten {
+  align-self: flex-end;
+}
+
+.number img {
+  width: auto;
+  height: 4vmin;
+  margin: .3vmin;
+}
+
+.clock__center {
+  width: 2vmin;
+  height: 2vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock__shadow-thingy {
+  position: absolute;
+  width: 1.5vmin;
+  height: 2.2vmin;
+  background-color: #b9bbb1;
+  border-radius: 0 0 45% 45%;
+  bottom: -1.3vmin;
+  left: -1vmin;
+  transform: rotate(50deg);
+}
+
+.clock__center-circle {
+  width: 2vmin;
+  height: 2vmin;
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 1px .15vmin #343027,
+              inset 0 0 1px 2px #78725c;
+}
+
+.clock__center-inner {
+  width: 1.6vmin;
+  height: 1.6vmin;
+  background-color: #baac6b;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 0 .1vmin rgba(255, 255, 255, .2),
+              inset 0 0 1px .25vmin #d3c68f;
+  overflow: hidden;
+}
+
+.clock__center-flare,
+.clock__center-lower-flare {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.clock__center-flare {
+  border-left: .15vmin solid transparent;
+  border-right: .15vmin solid transparent;
+  border-top: .8vmin solid rgba(255, 255, 255, .6);
+  border-bottom: .8vmin solid rgba(255, 255, 255, .6);
+}
+
+.clock__center-lower-flare {
+  border-left: .25vmin solid transparent;
+  border-right: .25vmin solid transparent;
+  border-top: 1vmin solid rgba(255, 255, 255, .6);
+  border-bottom: 1vmin solid rgba(255, 255, 255, .6);
+}
+
+.clock__long-hand,
+.clock__short-hand,
+.clock__thin-hand {
+  background: linear-gradient(to top, transparent 1vmin,
+    #c7b881 10%, #d2c493 50%, #b2a473);
+  background: linear-gradient(to top, transparent 0 1vmin,
+    #c7b881 1vmin 10%, #d2c493 50%, #b2a473);
+  position: absolute;
+  box-shadow: inset 0 0 .1vmin .1vmin rgba(182, 168, 116, .3);
+}
+
+.clock__long-hand,
+.clock__short-hand {
+  bottom: .5vmin;
+  left: .5vmin;
+  width: 1vmin;
+  transform-origin: .5vmin calc(100% - .5vmin);
+}
+
+.clock__thin-hand {
+  bottom: .75vmin;
+  left: .75vmin;
+  width: .5vmin;
+  transform-origin: .25vmin calc(100% - .25vmin);
+}
+
+.clock__long-hand,
+.clock__long-shadow-hand,
+.clock__thin-hand,
+.clock__thin-shadow-hand {
+  height: 20.2vmin;
+}
+
+.clock__short-hand,
+.clock__short-shadow-hand  {
+  height: 14.2vmin;
+}
+
+.clock__long-shadow-hand,
+.clock__short-shadow-hand,
+.clock__thin-shadow-hand {
+  background-color: #b9bbb1;
+  position: absolute;
+}
+
+.clock__long-shadow-hand,
+.clock__short-shadow-hand {
+  bottom: 46.5%;
+  width: 1vmin;
+  left: calc(50% - 1.5vmin);
+  transform-origin: .5vmin calc(100% - .5vmin);
+}
+
+.clock__thin-shadow-hand {
+  bottom: 47%;
+  width: .5vmin;
+  left: calc(50% - .75vmin);
+  transform-origin: .25vmin calc(100% - .25vmin);
+}
+
+@media all and (max-width: 850px) {
+  .clock {
+    transform: scale(1.5);
+  }
+
+  .colorChooser {
+    top: 2vmin;
+  }
+
+  .colorChooser__item {
+    width: 8vmin;
+    height: 8vmin;
+    margin: 2vmin;
+  }
+}
+
+@media all and (max-width: 850px) and (max-height: 560px) {
+  .colorChooser {
+    right: 4vmin;
+    flex-direction: column;
+    padding-left: 0;
+    align-items: flex-end;
+  }
+}
+
+</style>  
+<script>
+    const longHand = document.querySelector('.clock__long-hand');
+const longShadowHand = document.querySelector('.clock__long-shadow-hand');
+const shortHand = document.querySelector('.clock__short-hand');
+const shortShadowHand = document.querySelector('.clock__short-shadow-hand');
+const thinHand = document.querySelector('.clock__thin-hand');
+const thinShadowHand = document.querySelector('.clock__thin-shadow-hand');
+const body = document.querySelector('.body');
+const colorChoosers = Array.from(document.querySelectorAll('.colorChooser__item'));
+
+const addStrokes = () => {
+  const strokes = document.querySelectorAll('.stroke');
+  let deg = 6;
+  strokes.forEach((stroke) => {
+    stroke.style.transform = `translate(-50%) rotate(${deg}deg)`;
+    deg += 6;
+  });
+};
+
+const setDate = () => {
+  const currentTime = new Date();
+  const milliseconds = currentTime.getMilliseconds();
+  let seconds = currentTime.getSeconds();
+  let minutes = currentTime.getMinutes();
+  let hours = currentTime.getHours();
+  if (hours > 12) hours -= 12;
+  seconds += milliseconds / 1000;
+  minutes += seconds / 60;
+  hours += minutes / 60;
+  const secondsDegrees = seconds / 60 * 360;
+  const minutesDegrees = minutes / 60 * 360;
+  const hoursDegrees = hours / 12 * 360;
+  thinHand.style.transform = `rotate(${secondsDegrees}deg)`;
+  thinShadowHand.style.transform = `rotate(${secondsDegrees}deg)`;
+  longHand.style.transform = `rotate(${minutesDegrees}deg)`;
+  longShadowHand.style.transform = `rotate(${minutesDegrees}deg)`;
+  shortHand.style.transform = `rotate(${hoursDegrees}deg)`;
+  shortShadowHand.style.transform = `rotate(${hoursDegrees}deg)`;
+  requestAnimationFrame(setDate);
+};
+
+const setColor = (event) => {
+  body.style.backgroundColor = event.target.dataset.color;
+}
+
+addStrokes();
+setDate();
+
+colorChoosers.forEach(chooser => {
+  chooser.addEventListener('click', setColor);
+});
+
+</script>    
+</body>
+</html>
